@@ -8,6 +8,11 @@ body {
     line-height: 1.15;
 }
 
+p {
+    font-size: 13.33px;
+    margin: 0;
+}
+
 #main {
     width: 45%;
     margin: 0 auto;
@@ -23,6 +28,18 @@ body {
     line-height: 1.5;
 }
 
+#college-education p {
+    margin-bottom: 1rem;
+    color: #666666;
+}
+
+#employment p {
+    color: #666666; 
+}
+
+#job-skills p {
+    color: black;
+}
 h2 {
     font-size: 18.67px;
     font-weight: 400;
@@ -33,6 +50,13 @@ h2 {
 h3 {
     font-size: 16px;
     font-weight: 700;
+    margin: 1px;
+}
+
+h4 {
+    font-size: 13.33px;
+    font-weight: 400;
+    margin: 0;
 }
 
 hr {
