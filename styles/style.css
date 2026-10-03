@@ -20,6 +20,11 @@ p {
     background-color: white;
 }
 
+#main img {
+    float: right;
+    padding-left: 1rem;
+}
+
 #summary p, #work-experience p {
     font-family: "Adamina", serif;
     font-weight: 400;
