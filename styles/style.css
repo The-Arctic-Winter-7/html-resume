@@ -28,17 +28,12 @@ p {
     line-height: 1.5;
 }
 
-#college-education p {
-    margin-bottom: 1rem;
-    color: #666666;
-}
-
 #employment p {
     color: #666666; 
 }
 
-#job-skills p {
-    color: black;
+#job-skills {
+    font-size: 13.33px;
 }
 
 h1 {
@@ -70,4 +65,9 @@ h4 {
 hr {
     margin-top: 0;
     margin-bottom: 1.5rem;
+}
+
+.college-education p {
+    margin-bottom: 1rem;
+    color: #666666;
 }
