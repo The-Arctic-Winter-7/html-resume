@@ -2,9 +2,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #000000;
+    --secondary-color: #666666;
+    --main-font: "Arial", sans-serif;
+    --secondary-font: "Adamina", serif;
+}
+
 body {
     background-color: black;
-    font-family: "Arial", sans-serif;
+    font-family: var(--main-font);
     line-height: 1.15;
 }
 
@@ -14,19 +21,31 @@ p {
 }
 
 #main {
-    width: 43%;
+    max-width: 43%;
     margin: 0 auto;
     padding: 1in;
     background-color: white;
 }
 
-#main img {
-    float: right;
-    padding-left: 1rem;
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse wrap;
+}
+
+header img {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--primary-color);
+    border-radius: 1rem;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
 }
 
 #summary p, #work-experience p {
-    font-family: "Adamina", serif;
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-style: normal;
     font-size: 13.33px;
@@ -34,7 +53,7 @@ p {
 }
 
 #employment p {
-    color: #666666; 
+    color: var(--secondary-color); 
 }
 
 #job-skills {
@@ -52,7 +71,7 @@ h2 {
     font-weight: 400;
     line-height: 1;
     margin-bottom: 0.75rem;
-    color: #666666;
+    color: var(--secondary-color);
 }
 
 h3 {
@@ -74,5 +93,17 @@ hr {
 
 .college-education p {
     margin-bottom: 1rem;
-    color: #666666;
+    color: var(--secondary-color);
+}
+
+@media (width <= 768px) {
+    header img {
+        margin-bottom: 1rem;
+    }
+
+    #main {
+        width: 90%;
+        padding: 0.5in;
+    }
+
 }
